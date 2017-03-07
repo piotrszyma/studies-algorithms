@@ -1,0 +1,2 @@
+main: 
+	gcc L1Z3.c -o out.exe; ./out.exe

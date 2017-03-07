@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <malloc.h>
-#include <windows.h>
+#include <time.h>
+#include <sys/time.h>
+
 
 typedef struct node {
     int val;
@@ -27,8 +29,6 @@ int listSize(struct node **list);
 
 
 int main() {
-    LARGE_INTEGER t1, t2;
-    LARGE_INTEGER freq;
     double time = 0;
     node *head = NULL;
     int randomElement;
@@ -38,58 +38,55 @@ int main() {
     for (int i = 0; i < 1000; i++) add(&head, rand() % 100);
     printf("Generated \n");
 
-    QueryPerformanceFrequency(&freq);
-    for (int i = 0; i < 1000; i++) {
-        QueryPerformanceCounter(&t1);
-        get(&head, 100);
-        QueryPerformanceCounter(&t2);
-        time += ((t2.QuadPart - t1.QuadPart) * 1000.0) / freq.QuadPart;
+
+    struct timeval start, end;
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 10000000; i++) {
+        get(&head, 0);
     }
-    printf("Average time for same element access: %.10f [s]\n", time / 1000.0);
+    gettimeofday(&end, NULL);
 
-    for (int i = 0; i < 1000; i++) {
-        randomElement = rand() % 1000;
-        QueryPerformanceCounter(&t1);
-        get(&head, randomElement);
-        QueryPerformanceCounter(&t2);
-        time += ((t2.QuadPart - t1.QuadPart) * 1000.0) / freq.QuadPart;
+    printf("Average time for  first element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                      - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
+
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(&head, 749);
     }
+    gettimeofday(&end, NULL);
 
-    printf("Average time random element access:   %.10f [s]\n", time / 1000.0);
-
-    node *firstList = NULL;
-    node *secondList = NULL;
-
-    add(&firstList, 1);
-    add(&firstList, 2);
-
-    add(&secondList, 5);
-    add(&secondList, 9);
-    merge(&firstList, &secondList);
-
-//    show(&firstList);
-//    printf("\n");
-    add(&firstList, 8);
+    printf("Average time for    749 element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                      - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
 
 
-    show(&firstList);
-    printf("\n");
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(&head, 499);
+    }
+    gettimeofday(&end, NULL);
 
-    pop(&firstList, 4);
-    pop(&firstList, 3);
-    pop(&firstList, 2);
-    pop(&firstList, 1);
-    pop(&firstList, 0);
+    printf("Average time for    499 element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                      - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(&head, 999);
+    }
+    gettimeofday(&end, NULL);
 
-    push(&firstList, 1);
-    push(&firstList, 12);
-    pop(&firstList, 0);
-    pop(&firstList, 0);
-    show(&firstList);
 
-    printf("\n%d", listSize(&firstList));
+    printf("Average time for   last element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                      - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
 
-//    printf("%d", firstList->next->next->next->val);
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(&head, rand()%1000);
+    }
+    gettimeofday(&end, NULL);
+
+
+    printf("Average time for random element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                       - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
+
 
 
     return 0;

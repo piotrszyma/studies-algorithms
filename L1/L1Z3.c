@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <malloc.h>
-#include <windows.h>
+#include <time.h>
+#include <sys/time.h>
+#include <stdlib.h>
 
 typedef struct doublyLinkedListElement {
     int value;
@@ -23,23 +25,90 @@ int get(int elementNumber, doublyLinkedList list);
 
 int pop(int elementNumber, doublyLinkedList list);
 
+int merge(doublyLinkedList firstList, doublyLinkedList secondList);
+
 void show(doublyLinkedList list);
 
 int main(void) {
 
+    double time = 0;
+
     doublyLinkedList list = createDoublyLinkedList();
-    add(5, list);
-    add(6, list);
-    add(7, list);
-    add(8, list);
-    add(9, list);
-    add(10, list);
-    show(list);
-    printf("\n");
+    printf("Generating 1000 elements list... \n");
+    for (int i = 0; i < 1000; i++) add(rand() % 100, list);
+    printf("Generated \n");
+//
+//    doublyLinkedList list2 = createDoublyLinkedList();
+//
+//    add(1, list2);
+//    add(2, list2);
+//    add(3, list2);
+//    add(4, list2);
+//    add(4, list2);
+//    add(4, list2);
+//    add(4, list2);
+//    add(4, list2);
+//    add(4, list2);
+//
+//    show(list2);
+//
+//    printf("\n");
+//
+//    printf("%d", get(3, list2));
+//    printf("\n");
+//
+//    printf("%d", get(7, list2));
+//    printf("\n");
+
+    struct timeval start, end;
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 10000000; i++) {
+        get(0, list);
+    }
+    gettimeofday(&end, NULL);
+
+    printf("Average time for  first element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                 - (start.tv_sec * 1000000 + start.tv_usec))) /10000000);
+
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(749, list);
+    }
+    gettimeofday(&end, NULL);
+
+    printf("Average time for    749 element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                    - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
 
 
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(499, list);
+    }
+    gettimeofday(&end, NULL);
 
-    printf("%d", get(1, list));
+    printf("Average time for    499 element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                    - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 10000000; i++) {
+        get(999, list);
+    }
+    gettimeofday(&end, NULL);
+
+
+    printf("Average time for   last element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                    - (start.tv_sec * 1000000 + start.tv_usec))) /10000000);
+
+    gettimeofday(&start, NULL);
+    for (int i = 0; i < 1000000; i++) {
+        get(rand()%1000, list);
+    }
+    gettimeofday(&end, NULL);
+
+
+    printf("Average time for random element access: %0.5f [microseconds]\n",  ((float)((end.tv_sec * 1000000 + end.tv_usec)
+                                                                                    - (start.tv_sec * 1000000 + start.tv_usec))) /1000000);
+
+
     return 0;
 }
 
@@ -73,6 +142,8 @@ int add(int value, doublyLinkedList list) {
 }
 
 int get(int elementNumber, doublyLinkedList list) {
+
+    int LOOP_NR = 0;
     if (list->size - 1 < elementNumber) {
         printf("Index Out of Bound...");
         return 0;
@@ -82,7 +153,10 @@ int get(int elementNumber, doublyLinkedList list) {
         while (iterator > 0) {
             current = current->prev;
             iterator--;
+            LOOP_NR++;
         }
+//        printf("UP %d\n", LOOP_NR);
+
         return current->value;
     } else {
         doublyLinkedListElement *current = list->head;
@@ -90,7 +164,9 @@ int get(int elementNumber, doublyLinkedList list) {
         while (iterator > 0) {
             current = current->next;
             iterator--;
+            LOOP_NR++;
         }
+//        printf("LOW %d\n", LOOP_NR);
         return current->value;
     }
 }
@@ -104,10 +180,9 @@ int pop(int elementNumber, doublyLinkedList list) {
         list->head = NULL;
         list->size--;
         return 1;
-    }
-    else if(elementNumber == 0) {
+    } else if (elementNumber == 0) {
 
-        doublyLinkedListElement* secondElement = list->head->next;
+        doublyLinkedListElement *secondElement = list->head->next;
         list->head->prev->next = secondElement;
         free(list->head);
         list->head = secondElement;
@@ -141,7 +216,7 @@ int pop(int elementNumber, doublyLinkedList list) {
 }
 
 void show(doublyLinkedList list) {
-    if(list->size == 0) {
+    if (list->size == 0) {
         printf("List is empty");
         return;
     }
@@ -153,4 +228,17 @@ void show(doublyLinkedList list) {
         current = current->next;
         iterator++;
     }
+}
+
+int merge(doublyLinkedList firstList, doublyLinkedList secondList) {
+    doublyLinkedListElement *secondListLastElement = secondList->head->prev;
+    firstList->head->prev->next = secondList->head;
+    secondList->head->prev = firstList->head->prev;
+    secondListLastElement->next = firstList->head;
+    firstList->head->prev = secondListLastElement;
+    firstList->size += secondList->size;
+    secondList->size = 0;
+    free(secondList);
+    return 1;
+
 }
