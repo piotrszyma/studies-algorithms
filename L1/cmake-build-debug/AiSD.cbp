@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/thomp/Documents/Programowanie/C/AiSD/L1/L1Z2_2.c">
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/C/AiSD/L1/L1Z2.c">
 			<Option target="AiSD"/>
 		</Unit>
 		<Unit filename="C:/Users/thomp/Documents/Programowanie/C/AiSD/L1/CMakeLists.txt">

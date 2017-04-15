@@ -36,28 +36,28 @@ void show(singleLinkedList list);
 int main(void) {
     singleLinkedList list = createSingleLinkedList();
 
-    add(1, list);
-    add(2, list);
-    add(3, list);
-    add(4, list);
-
-    singleLinkedList list2 = createSingleLinkedList();
-
-    add(5, list2);
-    add(6, list2);
-    add(7, list2);
-    add(8, list2);
-
-    merge(list, list2);
-
-    show(list);
-    show(list2);
-    add(1, list2);
-    show(list2);
-    printf("\n");
-
-
-    return 0;
+//    add(1, list);
+//    add(2, list);
+//    add(3, list);
+//    add(4, list);
+//
+//    singleLinkedList list2 = createSingleLinkedList();
+//
+//    add(5, list2);
+//    add(6, list2);
+//    add(7, list2);
+//    add(8, list2);
+//
+//    merge(list, list2);
+//
+//    show(list);
+//    show(list2);
+//    add(1, list2);
+//    show(list2);
+//    printf("\n");
+//
+//
+//    return 0;
 
     printf("Generating 1000 elements list... \n");
     for (int i = 0; i < 1000; i++) add(rand() % 100, list);
@@ -155,10 +155,6 @@ int get(int elementNumber, singleLinkedList list) {
 
 
 void show(singleLinkedList list) {
-//    if(list == NULL) {
-//        printf("List is not initialized");
-//        return;
-//    }
     singleLinkedListElement *current = list->head;
     while (current) {
         printf("%d ", current->value);

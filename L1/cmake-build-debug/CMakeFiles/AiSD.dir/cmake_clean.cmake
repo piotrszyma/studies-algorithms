@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AiSD.dir/L1Z2_2.c.obj"
+  "CMakeFiles/AiSD.dir/L1Z2.c.obj"
   "AiSD.pdb"
   "AiSD.exe"
   "AiSD.exe.manifest"

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="L4"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L4">
+				<Option output="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/L4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/../../../../include"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/mingw32"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 L4"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="L4/fast">
+				<Option output="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/L4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/../../../../include"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/mingw32"/>
+					<Add directory="c:\program files (x86)\codeblocks\mingw\bin\../lib/gcc/mingw32/4.7.1/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 L4/fast"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.cpp">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.cpp">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.cpp">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.cpp">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/main.cpp">
+			<Option target="L4"/>
+		</Unit>
+		<Unit filename="C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

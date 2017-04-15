@@ -56,38 +56,38 @@ include CMakeFiles/AiSD.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AiSD.dir/flags.make
 
-CMakeFiles/AiSD.dir/L1Z2_2.c.obj: CMakeFiles/AiSD.dir/flags.make
-CMakeFiles/AiSD.dir/L1Z2_2.c.obj: ../L1Z2_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AiSD.dir/L1Z2_2.c.obj"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\AiSD.dir\L1Z2_2.c.obj   -c C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\L1Z2_2.c
+CMakeFiles/AiSD.dir/L1Z2.c.obj: CMakeFiles/AiSD.dir/flags.make
+CMakeFiles/AiSD.dir/L1Z2.c.obj: ../L1Z2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AiSD.dir/L1Z2.c.obj"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\AiSD.dir\L1Z2.c.obj   -c C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\L1Z2.c
 
-CMakeFiles/AiSD.dir/L1Z2_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/AiSD.dir/L1Z2_2.c.i"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\L1Z2_2.c > CMakeFiles\AiSD.dir\L1Z2_2.c.i
+CMakeFiles/AiSD.dir/L1Z2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/AiSD.dir/L1Z2.c.i"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\L1Z2.c > CMakeFiles\AiSD.dir\L1Z2.c.i
 
-CMakeFiles/AiSD.dir/L1Z2_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/AiSD.dir/L1Z2_2.c.s"
-	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\L1Z2_2.c -o CMakeFiles\AiSD.dir\L1Z2_2.c.s
+CMakeFiles/AiSD.dir/L1Z2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/AiSD.dir/L1Z2.c.s"
+	C:\PROGRA~2\CODEBL~1\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thomp\Documents\Programowanie\C\AiSD\L1\L1Z2.c -o CMakeFiles\AiSD.dir\L1Z2.c.s
 
-CMakeFiles/AiSD.dir/L1Z2_2.c.obj.requires:
+CMakeFiles/AiSD.dir/L1Z2.c.obj.requires:
 
-.PHONY : CMakeFiles/AiSD.dir/L1Z2_2.c.obj.requires
+.PHONY : CMakeFiles/AiSD.dir/L1Z2.c.obj.requires
 
-CMakeFiles/AiSD.dir/L1Z2_2.c.obj.provides: CMakeFiles/AiSD.dir/L1Z2_2.c.obj.requires
-	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2_2.c.obj.provides.build
-.PHONY : CMakeFiles/AiSD.dir/L1Z2_2.c.obj.provides
+CMakeFiles/AiSD.dir/L1Z2.c.obj.provides: CMakeFiles/AiSD.dir/L1Z2.c.obj.requires
+	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2.c.obj.provides.build
+.PHONY : CMakeFiles/AiSD.dir/L1Z2.c.obj.provides
 
-CMakeFiles/AiSD.dir/L1Z2_2.c.obj.provides.build: CMakeFiles/AiSD.dir/L1Z2_2.c.obj
+CMakeFiles/AiSD.dir/L1Z2.c.obj.provides.build: CMakeFiles/AiSD.dir/L1Z2.c.obj
 
 
 # Object files for target AiSD
 AiSD_OBJECTS = \
-"CMakeFiles/AiSD.dir/L1Z2_2.c.obj"
+"CMakeFiles/AiSD.dir/L1Z2.c.obj"
 
 # External object files for target AiSD
 AiSD_EXTERNAL_OBJECTS =
 
-AiSD.exe: CMakeFiles/AiSD.dir/L1Z2_2.c.obj
+AiSD.exe: CMakeFiles/AiSD.dir/L1Z2.c.obj
 AiSD.exe: CMakeFiles/AiSD.dir/build.make
 AiSD.exe: CMakeFiles/AiSD.dir/linklibs.rsp
 AiSD.exe: CMakeFiles/AiSD.dir/objects1.rsp
@@ -100,7 +100,7 @@ CMakeFiles/AiSD.dir/build: AiSD.exe
 
 .PHONY : CMakeFiles/AiSD.dir/build
 
-CMakeFiles/AiSD.dir/requires: CMakeFiles/AiSD.dir/L1Z2_2.c.obj.requires
+CMakeFiles/AiSD.dir/requires: CMakeFiles/AiSD.dir/L1Z2.c.obj.requires
 
 .PHONY : CMakeFiles/AiSD.dir/requires
 

@@ -122,32 +122,32 @@ AiSD/fast:
 	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/build
 .PHONY : AiSD/fast
 
-L1Z2_2.obj: L1Z2_2.c.obj
+L1Z2.obj: L1Z2.c.obj
 
-.PHONY : L1Z2_2.obj
+.PHONY : L1Z2.obj
 
 # target to build an object file
-L1Z2_2.c.obj:
-	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2_2.c.obj
-.PHONY : L1Z2_2.c.obj
+L1Z2.c.obj:
+	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2.c.obj
+.PHONY : L1Z2.c.obj
 
-L1Z2_2.i: L1Z2_2.c.i
+L1Z2.i: L1Z2.c.i
 
-.PHONY : L1Z2_2.i
+.PHONY : L1Z2.i
 
 # target to preprocess a source file
-L1Z2_2.c.i:
-	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2_2.c.i
-.PHONY : L1Z2_2.c.i
+L1Z2.c.i:
+	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2.c.i
+.PHONY : L1Z2.c.i
 
-L1Z2_2.s: L1Z2_2.c.s
+L1Z2.s: L1Z2.c.s
 
-.PHONY : L1Z2_2.s
+.PHONY : L1Z2.s
 
 # target to generate assembly for a file
-L1Z2_2.c.s:
-	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2_2.c.s
-.PHONY : L1Z2_2.c.s
+L1Z2.c.s:
+	$(MAKE) -f CMakeFiles\AiSD.dir\build.make CMakeFiles/AiSD.dir/L1Z2.c.s
+.PHONY : L1Z2.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... edit_cache
 	@echo ... AiSD
 	@echo ... rebuild_cache
-	@echo ... L1Z2_2.obj
-	@echo ... L1Z2_2.i
-	@echo ... L1Z2_2.s
+	@echo ... L1Z2.obj
+	@echo ... L1Z2.i
+	@echo ... L1Z2.s
 .PHONY : help
 
 

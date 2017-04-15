@@ -11,14 +11,27 @@ int add(struct node **head_ptr, int val);
 
 int pop(struct node **head_ptr);
 
+void show(struct node** head_ptr);
+
 int main() {
     node *head = NULL;
-    add(&head, 7);
-    add(&head, 8);
-    add(&head, 9);
-    printf("%d", pop(&head));
-    printf("%d", pop(&head));
-    printf("%d", pop(&head));
+
+    add(&head, 117);
+    show(&head);
+
+    printf("\n");
+
+    add(&head, 328);
+    add(&head, 522);
+    add(&head, 129);
+
+    show(&head);
+    pop(&head);
+
+    printf("\n");
+
+    show(&head);
+
 }
 
 int add(struct node **head_ptr, int val) {
@@ -46,4 +59,12 @@ int pop(struct node **head_ptr) {
     int retVal = (*head_ptr)->val;
     (*head_ptr) = (*head_ptr)->next;
     return retVal;
+}
+
+void show(struct node** head_ptr) {
+    node* current = *head_ptr;
+    while(current) {
+        printf("%d ", current->val);
+        current = current->next;
+    }
 }

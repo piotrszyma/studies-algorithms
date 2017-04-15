@@ -1,0 +1,60 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.cpp
+string
+-
+tuple
+-
+InputInterpreter.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+string
+-
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.cpp
+InputParser.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
+InputInterpreter.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+string
+-
+iostream
+-
+tuple
+-
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
+vector
+-
+InputInterpreter.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.cpp
+iostream
+-
+Tree.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+TreeNode.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.cpp
+TreeNode.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
+
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/main.cpp
+iostream
+-
+Tree/Tree.h
+C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+
