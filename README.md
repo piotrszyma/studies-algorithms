@@ -1,1 +1,1 @@
-My solutions for Algorytmy i Struktury Danych Summer Semester 2016/2017.
+My solutions for __Algorytmy i Struktury Danych__. (Computer Science Summer Semester 2016/2017)
