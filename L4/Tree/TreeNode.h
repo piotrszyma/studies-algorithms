@@ -24,9 +24,17 @@ public:
 
     T getValue();
 
+    void setValue(T value);
+
     TreeNode* setRightChild(T value);
 
     TreeNode* setLeftChild(T value);
+
+    TreeNode* changeRightChild(TreeNode* node);
+
+    TreeNode* changeLeftChild(TreeNode* node);
+
+    TreeNode* changeParent(TreeNode* node);
 
     virtual ~TreeNode();
 };

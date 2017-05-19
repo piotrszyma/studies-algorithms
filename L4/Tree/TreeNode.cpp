@@ -1,18 +1,4 @@
-//
-// Created by thomp on 12.04.2017.
-//
-
 #include "TreeNode.h"
-
-
-//template<typename T>
-//TreeNode<T>* TreeNode<T>::parentPointer;
-//template<typename T>
-//TreeNode<T>* TreeNode<T>::leftChildPointer;
-//template<typename T>
-//TreeNode<T>* TreeNode<T>::rightChildPointer;
-//template<typename T>
-//T TreeNode<T>::value;
 
 template<typename T>
 TreeNode<T>::TreeNode(T value, TreeNode* parent) {
@@ -43,6 +29,11 @@ T TreeNode<T>::getValue() {
 }
 
 template<typename T>
+void TreeNode<T>::setValue(T newValue) {
+    this->value = newValue;
+}
+
+template<typename T>
 TreeNode<T>* TreeNode<T>::setRightChild(T value) {
     rightChildPointer = new TreeNode(value, this);
 }
@@ -51,6 +42,22 @@ template<typename T>
 TreeNode<T>* TreeNode<T>::setLeftChild(T value) {
     leftChildPointer = new TreeNode(value, this);
 }
+
+template<typename T>
+TreeNode<T>* TreeNode<T>::changeLeftChild(TreeNode* node) {
+    leftChildPointer = node;
+}
+
+template<typename T>
+TreeNode<T>* TreeNode<T>::changeRightChild(TreeNode* node) {
+    rightChildPointer = node;
+}
+
+template<typename T>
+TreeNode<T>* TreeNode<T>::changeParent(TreeNode* node) {
+    parentPointer = node;
+}
+
 
 template<typename T>
 TreeNode<T>::~TreeNode() {};

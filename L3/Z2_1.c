@@ -226,6 +226,9 @@ int randomizedSelectPartition(int *array, int startIndex, int endIndex) {
 
 int select(int *array, int searchedIndex) {
 
+    if (logEnabled) {
+        printf("SELECT: Starting algorithm\n");
+    }
     if (searchedIndex < 0 || searchedIndex > arraySize - 1) return -1;
 
     int *arrayCopy = malloc(arraySize * sizeof(int));
@@ -242,13 +245,29 @@ int select(int *array, int searchedIndex) {
 
 int selectRecursion(int *array, int startIndex, int endIndex, int searchedIndex) {
 
+    if (logEnabled) {
+        printf("SELECT: Starting recursion for array [%d - %d]\n", startIndex, endIndex);
+    }
     int pivotIndex = selectPartition(array, startIndex, endIndex);
 
+    if (logEnabled) {
+        printf("SELECT:Choosing pivot index: %d, value: %d\n", pivotIndex, array[pivotIndex]);
+    }
+
     if (pivotIndex == searchedIndex) {
+        if (logEnabled) {
+            printf("SELECT: Pivot index equal to searched element, returning.\n");
+        }
         return array[searchedIndex];
     } else if (pivotIndex < searchedIndex) {
+        if (logEnabled) {
+            printf("SELECT: Pivot is smaller than searched element, looking in right side of the table.\n");
+        }
         return selectRecursion(array, pivotIndex + 1, endIndex, searchedIndex);
     } else {
+        if (logEnabled) {
+            printf("SELECT: Pivot is bigger than searched element, looking in right side of the table.\n");
+        }
         return selectRecursion(array, startIndex, pivotIndex - 1, searchedIndex);
     }
 
@@ -273,7 +292,6 @@ int selectPartition(int *array, int startIndex, int endIndex) {
         if (array[checkedIndex] <= pivotValue) {
             swap(array, lastLessIndex, checkedIndex);
             operationsCounter++;
-
             lastLessIndex++;
         }
     }

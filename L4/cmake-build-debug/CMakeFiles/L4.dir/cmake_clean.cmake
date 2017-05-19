@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/L4.dir/Tree/TreeNode.cpp.obj"
   "CMakeFiles/L4.dir/Input/InputInterpreter.cpp.obj"
   "CMakeFiles/L4.dir/Input/InputParser.cpp.obj"
+  "CMakeFiles/L4.dir/Tree/TreeTest.cpp.obj"
   "L4.pdb"
   "L4.exe"
   "L4.exe.manifest"

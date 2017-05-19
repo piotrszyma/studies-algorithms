@@ -13,5 +13,5 @@ set(SOURCE_FILES
         Input/InputInterpreter.cpp
         Input/InputParser.h
         Input/InputParser.cpp
-        )
+        Tree/TreeTest.cpp Tree/TreeTest.h)
 add_executable(L4 ${SOURCE_FILES})

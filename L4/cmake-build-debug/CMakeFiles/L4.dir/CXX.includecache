@@ -6,23 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.cpp
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.cpp
 string
 -
 tuple
 -
+iostream
+-
 InputInterpreter.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
 string
 -
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.cpp
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.cpp
 InputParser.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
 InputInterpreter.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+../Tree/Tree.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
 string
 -
 iostream
@@ -30,31 +34,59 @@ iostream
 tuple
 -
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
 vector
 -
 InputInterpreter.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputInterpreter.h
+../Tree/Tree.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.cpp
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.cpp
 iostream
+-
+stdexcept
 -
 Tree.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
 TreeNode.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.cpp
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.cpp
 TreeNode.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeNode.h
 
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/main.cpp
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeTest.cpp
+fstream
+-
+random
+-
 iostream
 -
+algorithm
+-
+TreeTest.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeTest.h
+../Tree/Tree.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeTest.h
+
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/main.cpp
+iostream
+-
+fstream
+-
+tuple
+-
 Tree/Tree.h
-C:/Users/thomp/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/Tree.h
+Input/InputParser.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Input/InputParser.h
+Tree/TreeTest.h
+C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L4/Tree/TreeTest.h
 

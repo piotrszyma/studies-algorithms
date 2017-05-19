@@ -3,28 +3,23 @@
 
 #include <vector>
 #include "InputInterpreter.h"
+#include "../Tree/Tree.h"
 
 
 class InputParser {
-    static InputParser* inputParser;
     InputInterpreter* inputInterpreter;
     std::vector<std::tuple<std::string, std::string>> commandsList;
     int numberOfInstructions;
 
-    InputParser();
-
-    InputParser(const InputParser &);
-
-    InputParser &operator=(const InputParser &);
-
 public:
-    static InputParser &getInputParser();
+
+    InputParser();
 
     void getNumberOfInstructions();
 
     void getInput();
 
-    void executeInterpretedCommands();
+    std::vector<std::tuple<std::string, std::string>> getCommandsList();
 };
 
 

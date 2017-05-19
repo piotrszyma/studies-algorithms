@@ -26,8 +26,12 @@ def generate_plot(filename, label_desc, color):
 
 def create_plot():
     # NEXT FIG:
-    generate_plot('qs_mm_100_100000.txt', 'quick sort & median of medians average', 'ro')
-    generate_plot('qs_rand_100_100000.txt', 'quick sort & random pivot average', 'go')
+    generate_plot('qs_mm_100_100000.txt', 'quick sort & mm pivot average', 'r')
+    generate_plot('qs_rand_100_100000.txt', 'quick sort & random pivot average', 'g')
+    generate_plot('qs_mm_100_100000_min.txt', 'quick sort & mm pivot min', 'b')
+    generate_plot('qs_rand_100_100000_min.txt', 'quick sort & random pivot min', 'c')
+    generate_plot('qs_mm_100_100000_max.txt', 'quick sort & mm pivot max', 'y')
+    generate_plot('qs_rand_100_100000_max.txt', 'quick sort & random pivot max', 'm')
 
     plt.xlabel("Array size")
     plt.ylabel("Number of operations")
