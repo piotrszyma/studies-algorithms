@@ -3,20 +3,16 @@ package graph;
 import structures.HeapElement;
 import structures.MinPriorityQueue;
 
-import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Piotr Szyma on 25.05.2017.
- */
 public class GraphKruskalMST implements GraphMST {
 
-    private Graph MinimalSpanningTree;
-    private Graph searchedGraph;
+    private IndirectGraph MinimalSpanningTree;
+    private IndirectGraph searchedGraph;
 
-    public GraphKruskalMST(Graph searchedGraph) {
+    public GraphKruskalMST(IndirectGraph searchedGraph) {
         this.searchedGraph = searchedGraph;
-        MinimalSpanningTree = new Graph(searchedGraph.numberOfVertexes());
+        MinimalSpanningTree = new IndirectGraph(searchedGraph.numberOfVertexes());
     }
 
     private void findMST() {
@@ -32,6 +28,7 @@ public class GraphKruskalMST implements GraphMST {
         while (MinimalSpanningTree.numberOfEdges() != searchedGraph.numberOfVertexes() - 1) {
 
             HeapElement edgeWithMinimalWeight = minPriorityQueue.extractBest();
+
             String[] vertexIDs = ((String) edgeWithMinimalWeight.getValue()).split("#");
             int edgeFirstVertexID = Integer.parseInt(vertexIDs[0]);
             int edgeSecondVertexID = Integer.parseInt(vertexIDs[1]);
@@ -47,7 +44,7 @@ public class GraphKruskalMST implements GraphMST {
     }
 
     @Override
-    public Graph getMST() {
+    public IndirectGraph getMST() {
         try {
             findMST();
         } catch (IndexOutOfBoundsException e) {

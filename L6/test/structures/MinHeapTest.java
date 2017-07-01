@@ -16,8 +16,8 @@ public class MinHeapTest {
     private HeapElement[] dataArray;
     private Random randomGenerator;
 
-    private final int testingArraySize = 5;
-    private final int numberOfRandomTests = 100;
+    private final int testingArraySize = 50;
+    private final int numberOfRandomTests = 10;
 
     @Before
     public void setUp() throws Exception {
@@ -53,4 +53,47 @@ public class MinHeapTest {
         }
 
     }
+
+    @Test
+    public void checkParentsLeftRightFunc() {
+        assertTrue(minHeap.getParent(0) == 0);
+        assertTrue(minHeap.getParent(1) == 0);
+        assertTrue(minHeap.getParent(2) == 0);
+        assertTrue(minHeap.getParent(3) == 1);
+        assertTrue(minHeap.getParent(4) == 1);
+        assertTrue(minHeap.getLeft(0) == 1);
+        assertTrue(minHeap.getLeft(1) == 3);
+        assertTrue(minHeap.getLeft(2) == 5);
+        assertTrue(minHeap.getLeft(3) == 7);
+        assertTrue(minHeap.getLeft(4) == 9);
+        assertTrue(minHeap.getRight(0) == 2);
+        assertTrue(minHeap.getRight(1) == 4);
+        assertTrue(minHeap.getRight(2) == 6);
+        assertTrue(minHeap.getRight(3) == 8);
+        assertTrue(minHeap.getRight(4) == 10);
+    }
+
+    @Test
+    public void petersTest() {
+        HeapElement[] elements = new HeapElement[11];
+        elements[0] = new HeapElement<>(1,1);
+        elements[1] = new HeapElement<>(3,3);
+        elements[2] = new HeapElement<>(2,2);
+        elements[3] = new HeapElement<>(16,16);
+        elements[4] = new HeapElement<>(9,9);
+        elements[5] = new HeapElement<>(7,7);
+        elements[6] = new HeapElement<>(80,80);
+        elements[7] = new HeapElement<>(2,2);
+        elements[8] = new HeapElement<>(4,4);
+        elements[9] = new HeapElement<>(6,6);
+        elements[10] = new HeapElement<>(7,7);
+
+        Heap aMinHeap = new MinHeap();
+        aMinHeap.build(elements);
+        for(HeapElement element: aMinHeap.array) {
+            System.out.print(element.getPriority() + " ");
+        }
+        System.out.println();
+   }
+
 }

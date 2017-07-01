@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class MinHeap extends Heap {
 
-    public MinHeap() {
+    MinHeap() {
         this.array = new ArrayList<>();
     }
 

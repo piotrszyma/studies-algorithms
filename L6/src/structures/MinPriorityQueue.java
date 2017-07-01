@@ -36,14 +36,33 @@ public class MinPriorityQueue extends MinHeap implements PriorityQueue {
     }
 
     @Override
-    public void modifyKey(int index, double newPriority) {
+    public boolean modifyKey(int index, double newPriority) {
+
         if (array.get(index).getPriority() < newPriority) {
-            throw new IllegalArgumentException("New priority is higher than old priority!");
+            return false;
         }
+
         array.get(index).setPriority(newPriority);
+
         while (index > 0 && array.get(getParent(index)).getPriority() > array.get(index).getPriority()) {
-            Collections.swap(array, index, getParent(index));
+            int parent = getParent(index);
+            Collections.swap(array, index, parent);
             index = getParent(index);
         }
+
+        return true;
+    }
+
+    public int getIndex(Object element) {
+        int index = 0;
+        for (HeapElement arrayElement : array) {
+            if (arrayElement.getValue() == element) {
+                return index;
+            }
+            index++;
+        }
+        System.out.println(element);
+        System.out.println("!");
+        return -1;
     }
 }

@@ -11,8 +11,9 @@ public abstract class Heap {
     public abstract void build(HeapElement[] array);
 
     int getParent(int i) {
-        if(i < 2) return 0;
-        return (int) Math.ceil(i / 2) - 1;
+        if(i == 0) return 0;
+        int parentIndex = (i + 1) / 2;
+        return parentIndex - 1;
     }
 
     int getLeft(int i) {
