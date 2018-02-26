@@ -1,3 +1,0 @@
-C:/Users/thomp/Documents/Programowanie/C/AiSD/L1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/thomp/Documents/Programowanie/C/AiSD/L1/cmake-build-debug/CMakeFiles/AiSD.dir
-C:/Users/thomp/Documents/Programowanie/C/AiSD/L1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

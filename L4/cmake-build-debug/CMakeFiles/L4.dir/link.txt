@@ -1,3 +1,0 @@
-"C:\Users\Piotr Szyma\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\171.4073.41\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\L4.dir/objects.a
-C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\L4.dir/objects.a @CMakeFiles\L4.dir\objects1.rsp
-C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  -g   -Wl,--whole-archive CMakeFiles\L4.dir/objects.a -Wl,--no-whole-archive  -o L4.exe -Wl,--out-implib,libL4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\L4.dir\linklibs.rsp

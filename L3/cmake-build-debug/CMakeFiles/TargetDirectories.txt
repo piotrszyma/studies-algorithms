@@ -1,3 +1,0 @@
-C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L3/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L3/cmake-build-debug/CMakeFiles/L3.dir
-C:/Users/Piotr Szyma/Documents/Programowanie/4 semestr/AiSD/L3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
